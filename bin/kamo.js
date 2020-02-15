@@ -3,13 +3,15 @@
 
 const setConfig = require('../lib/set-config')
 const handleContent = require('../lib/handle-content')
+const formatContent = require('../lib/format-content')
 
-function kamo() {
+async function kamo() {
   const config = setConfig()
-  const files = handleContent(config.content)
-    .then((files) => {
-      console.log(files)
-    })
+  const filePaths = await handleContent(config.content)
+  const objects = await Promise.all(
+    filePaths.map(filePath => formatContent(filePath))
+  )
+  console.log(objects)
 }
 
 kamo()
