@@ -7,7 +7,7 @@ const formatContent = require('../lib/format-content')
 const writeJson = require('../lib/write-json')
 const quack = require('../lib/quack')
 
-async function kamo() {
+async function kamokamo() {
   const config = setConfig()
   const filePaths = await handleContent(config.content)
   const fileObjects = await Promise.all(
@@ -17,4 +17,4 @@ async function kamo() {
   quack()
 }
 
-kamo()
+kamokamo()

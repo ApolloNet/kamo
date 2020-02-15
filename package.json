@@ -1,5 +1,5 @@
 {
-  "name": "kamo",
+  "name": "kamokamo",
   "version": "0.0.1",
   "description": "Convert a folder containing Markdown files to a Json file",
   "keywords": [
@@ -14,18 +14,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ApolloNet/kamo.git"
+    "url": "git+https://github.com/ApolloNet/kamokamo.git"
   },
   "bugs": {
-    "url": "https://github.com/ApolloNet/kamo/issues"
+    "url": "https://github.com/ApolloNet/kamokamo/issues"
   },
-  "homepage": "https://github.com/ApolloNet/kamo#readme",
-  "main": "bin/kamo.js",
+  "homepage": "https://github.com/ApolloNet/kamokamo#readme",
+  "main": "bin/kamokamo.js",
   "bin": {
-    "tamago": "./bin/kamo.js"
+    "tamago": "./bin/kamokamo.js"
   },
   "scripts": {
-    "start": "node bin/kamo.js",
+    "start": "node bin/kamokamo.js",
     "test": "ava ./test/*.js"
   },
   "dependencies": {
