@@ -1,0 +1,31 @@
+{
+  "name": "kamo",
+  "version": "0.0.1",
+  "description": "Convert a folder containing Markdown files to a Json file",
+  "keywords": [
+    "markdown",
+    "json"
+  ],
+  "license": "GPL-3.0",
+  "author": {
+    "name": "Alexandre Ronsaut",
+    "email": "alex@apollonet.fr",
+    "url": "https://apollonet.fr"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ApolloNet/kamo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ApolloNet/kamo/issues"
+  },
+  "homepage": "https://github.com/ApolloNet/kamo#readme",
+  "main": "bin/kamo.js",
+  "bin": {
+    "tamago": "./bin/kamo.js"
+  },
+  "scripts": {
+    "start": "node bin/kamo.js",
+    "test": "ava ./test/*.js"
+  }
+}
