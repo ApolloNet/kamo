@@ -4,14 +4,17 @@
 const setConfig = require('../lib/set-config')
 const handleContent = require('../lib/handle-content')
 const formatContent = require('../lib/format-content')
+const writeJson = require('../lib/write-json')
+const quack = require('../lib/quack')
 
 async function kamo() {
   const config = setConfig()
   const filePaths = await handleContent(config.content)
-  const objects = await Promise.all(
+  const fileObjects = await Promise.all(
     filePaths.map(filePath => formatContent(filePath))
   )
-  console.log(objects)
+  await writeJson(config.outputDir, fileObjects)
+  quack()
 }
 
 kamo()
