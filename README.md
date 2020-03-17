@@ -1,6 +1,6 @@
 # 鴨鴨 Kamo Kamo
 
-Convert a folder containing Markdown files to Json.
+Convert Markdown files to Json data.
 
 ## Install
 

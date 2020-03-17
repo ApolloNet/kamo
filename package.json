@@ -1,7 +1,7 @@
 {
   "name": "kamokamo",
   "version": "0.0.3",
-  "description": "Convert a folder containing Markdown files to a Json file",
+  "description": "Convert Markdown files to Json data",
   "keywords": [
     "markdown",
     "json"
