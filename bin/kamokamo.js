@@ -12,7 +12,7 @@ async function kamokamo() {
   const config = setConfig()
   const filePaths = await handleDirs(config.dirs)
   const fileObjects = await Promise.all(
-    filePaths.map(filePath => formatContent(filePath))
+    filePaths.map(filePath => formatContent(filePath, config))
   )
   const json = formatJson(fileObjects)
   process.stdout.write(json)

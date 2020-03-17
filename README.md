@@ -6,7 +6,17 @@ Convert Markdown files to Json data.
 
 `npm i kamokamo`
 
-## Config
+## Usage
+
+### Output to stdout
+
+`kamokamo`
+
+### Write a Json file
+
+`kamokamo > the-output-folder/the-json-file.json`
+
+## Folders
 
 ### Default
 
@@ -21,8 +31,9 @@ It should contain the array `dirs`.
 
 ### Example
 
-For instance, we need to handle four folders: `pages`, `posts`, `events` 
-and `projects`. Here is the content of our `kamokamo.config.json` config file:
+We need to handle four folders: `pages`, `posts`, `events` and `projects`.
+
+Here is the content of our `kamokamo.config.json` config file:
 
 ```
 {
@@ -30,12 +41,19 @@ and `projects`. Here is the content of our `kamokamo.config.json` config file:
 }
 ```
 
-## Usage
+## Home
 
-### Output to stdout
+The object key of a content can be rewritten as `"/"` for a future usage 
+as a homepage path.
 
-`kamokamo`
+### Example
 
-### Write a Json file
+We want the contents of `/pages/home.md` to be used for our homepage.
 
-`kamokamo > the-output-folder/the-json-file.json`
+Here is config:
+
+```
+{
+  "home": "/pages/home"
+}
+```
