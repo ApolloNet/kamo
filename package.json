@@ -22,7 +22,7 @@
   "homepage": "https://github.com/ApolloNet/kamokamo#readme",
   "main": "bin/kamokamo.js",
   "bin": {
-    "tamago": "./bin/kamokamo.js"
+    "kamokamo": "./bin/kamokamo.js"
   },
   "scripts": {
     "start": "node bin/kamokamo.js",
