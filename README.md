@@ -1,4 +1,4 @@
-# 鴨鴨 Kamo Kamo
+# 鴨鴨 Kamokamo
 
 Convert Markdown files to Json data.
 
@@ -57,3 +57,10 @@ Here is config:
   "home": "/pages/home"
 }
 ```
+
+## Latitude and longitude from an address
+
+If a markdown file contains an `address` front matter field, Kamokamo adds 
+its latitude `lat` and longitude `lon` to the json output.
+
+It is done thanks to [Nominatim](https://nominatim.openstreetmap.org/).
