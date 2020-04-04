@@ -2,6 +2,9 @@
 title: The Ugly Duckling
 description: The story tells of a little bird born in a barnyard who suffers abuse from the others around him until, much to his delight (and to the surprise of others), he matures into a beautiful swan, the most beautiful bird of all.
 address: 36 rue Molière 76000 Rouen
+dates: [
+  "2020-09-13 12:26:40"
+]
 ---
 
 When the story begins, a mother duck's eggs hatch. One of the little birds is perceived by the other birds and animals on the farm as an ugly little creature and suffers much verbal and physical abuse from them. He wanders sadly from the barnyard and lives with wild ducks and geese until hunters slaughter the flocks. He finds a home with an old woman, but her cat and hen tease and taunt him mercilessly and once again he sets off alone.
