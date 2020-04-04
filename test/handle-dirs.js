@@ -1,5 +1,3 @@
-'use strict'
-
 const test = require('ava')
 const handleDirs = require('../lib/handle-dirs.js')
 
