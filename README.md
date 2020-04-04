@@ -58,9 +58,21 @@ Here is config:
 }
 ```
 
+## Dates
+
+Frontmatter fields named `date` or `dates` are processed.
+
+They can be of type `String` or `Array of Strings`.
+
+Formatting uses [date-fns format](https://date-fns.org/v2.11.1/docs/format)
+
 ## Latitude and longitude from an address
 
 If a markdown file contains an `address` front matter field, Kamokamo adds 
 its latitude `lat` and longitude `lon` to the json output.
 
 It is done thanks to [Nominatim](https://nominatim.openstreetmap.org/).
+
+## Undocumented params
+
+Have a look at `lib/set-config.js` for yet undocumented params :)
