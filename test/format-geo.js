@@ -1,5 +1,3 @@
-'use strict'
-
 const test = require('ava')
 const formatGeo = require('../lib/format-geo.js')
 
