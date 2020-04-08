@@ -50,7 +50,7 @@ as a homepage path.
 
 We want the contents of `/pages/home.md` to be used for our homepage.
 
-Here is config:
+Here is the config:
 
 ```
 {
@@ -66,12 +66,23 @@ They can be of type `String` or `Array of Strings`.
 
 Formatting uses [date-fns format](https://date-fns.org/v2.11.1/docs/format)
 
-## Latitude and longitude from an address
+## Geocoding
 
-If a markdown file contains an `address` front matter field, Kamokamo adds 
-its latitude `lat` and longitude `lon` to the json output.
+Kamokamo can geocode an address string to geo datas thanks to the 
+[Nominatim API](https://nominatim.openstreetmap.org/).
 
-It is done thanks to [Nominatim](https://nominatim.openstreetmap.org/).
+Each front matter address field should be added to the config file like:
+
+```
+{
+  "geoFields": ["address"]
+}
+```
+
+Then, the object key `geo` is added to the json content.
+
+It is an array containing each address field and, for each, geo datas retrieved 
+from the Nominatim API like `lat` and `lon`.
 
 ## Undocumented params
 

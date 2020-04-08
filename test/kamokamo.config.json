@@ -1,5 +1,8 @@
 {
   "dirs": "mock",
+  "geoFields": [
+    "address"
+  ],
   "dateFormats": [
     {
       "name": "short",
