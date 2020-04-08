@@ -1,3 +1,17 @@
 {
-  "dirs": "mock"
+  "dirs": "mock",
+  "dateFormats": [
+    {
+      "name": "short",
+      "format": "d MMMM yyyy"
+    },
+    {
+      "name": "long",
+      "format": "d MMMM yyyy - H:mm"
+    },
+    {
+      "name": "rss",
+      "format": "EEE, dd LLL yyyy HH:mm:ss xx"
+    }
+  ]
 }
